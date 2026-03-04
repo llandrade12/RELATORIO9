@@ -348,6 +348,7 @@ function renderConsolidatedReport(container) {
             <div class="card" style="border-left-color: #00B0F0;"><div class="card-title">Total Recebido</div><div class="card-value">${formatCurrency(filteredTotals.totalPago)}</div></div>
             <div class="card" style="border-left-color: #ED7D31;"><div class="card-title">Saldo em Aberto (Girando)</div><div class="card-value">${formatCurrency(filteredTotals.totalSaldoAberto)}</div></div>
             <div class="card" style="border-left-color: #70AD47;"><div class="card-title">Lucro Real</div><div class="card-value">${formatCurrency(filteredTotals.totalLucro)}</div></div>
+            <div class="card" style="border-left-color: #FFC000;"><div class="card-title">Resultado Financeiro</div><div class="card-value">${formatCurrency(filteredTotals.totalPago - filteredTotals.totalEmprestado)}</div></div>
         </div>
         
         <div class="section-title">Detalhamento por Período (Consolidado)</div>
@@ -488,6 +489,7 @@ function renderStateReport(state, type, container) {
             <div class="card" style="border-left-color: #00B0F0;"><div class="card-title">Total Recebido</div><div class="card-value">${formatCurrency(totals.totalPago)}</div></div>
             <div class="card" style="border-left-color: #ED7D31;"><div class="card-title">Saldo em Aberto (Girando)</div><div class="card-value">${formatCurrency(totals.totalSaldoAberto)}</div></div>
             <div class="card" style="border-left-color: #70AD47;"><div class="card-title">Lucro Real</div><div class="card-value">${formatCurrency(totals.totalLucro)}</div></div>
+            <div class="card" style="border-left-color: #FFC000;"><div class="card-title">Resultado Financeiro</div><div class="card-value">${formatCurrency(totals.totalPago - totals.totalEmprestado)}</div></div>
         </div>
 
         <div class="section-title">Detalhamento por Período</div>
